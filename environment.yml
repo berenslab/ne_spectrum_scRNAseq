@@ -1,0 +1,29 @@
+name: miniumap
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - ipykernel
+  - matplotlib
+  - matplotlib-base
+  - numba
+  - numpy
+  - numpy-base
+  - opentsne
+  - pandas
+  - pip
+  - python
+  - pytorch=1.13.1
+  - cudatoolkit
+  - scikit-image
+  - scikit-learn
+  - scipy
+  - setuptools
+  - torchvision=0.14.1
+  - yaml
+  - anndata
+  - scanpy=1.9.3
+  - ffmpeg
+  - pip:
+      - ne_spectrum

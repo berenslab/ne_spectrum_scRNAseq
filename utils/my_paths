@@ -1,0 +1,3 @@
+data_path /gpfs01/berens/user/sdamrich/data/miniumap
+fig_path /gpfs01/berens/user/sdamrich/data/miniumap/figures
+style_path /gpfs01/berens/user/sdamrich/mirrored_code/miniumap/utils/style.mplstyle
