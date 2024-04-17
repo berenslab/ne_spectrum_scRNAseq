@@ -5,7 +5,7 @@ This repository contains scripts and notebooks to reproduce the experiments in
 
 It depends on the `ne-spectrum` package, which computes neighbor embedding spectra.
 
-<p align="center"><img width="400" alt="NE spectrum on Kanton et al. data" src="/figures/main_fig_tsne.png">
+<p align="center"><img width="800" alt="NE spectrum on Kanton et al. data" src="/figures/main_fig_tsne.png">
 
 
 Neighbor embedding spectrum on developmental human brain organoid data from [Kanton et al. 2019](https://www.nature.com/articles/s41586-019-1654-9)
@@ -17,7 +17,7 @@ Higher attraction improves the global structure as measured by Spearman distance
 local structure as measured by kNN recall.
 
 
-<p align="center"><img width="400" alt="Global and local metric along the spectrum" src="/figures/local_global_metrics_tsne.png">
+<p align="center"><img width="400" alt="Global and local metric along the spectrum" src="/figures/local_global_metrics_tsne_subsample_0.png">
 
 
 # Installation
