@@ -7,28 +7,37 @@ import pandas as pd
 import pickle
 from .treutlein_preprocess import preprocess as treut_preprocess
 
+
 def get_path(path_type):
     #  util for reading in paths from file
     with resource_stream(__name__, "my_paths") as file:
         lines = file.readlines()
-
     lines = [line.decode('ascii').split(" ") for line in lines]
     path_dict = {line[0]: " ".join(line[1:]).strip("\n") for line in lines}
 
     if path_type == "data":
         try:
-            return path_dict["data_path"]
+            if path_dict["data_path"].startswith("../"):
+                dir = "/".join(__file__.split("/")[:-2])
+                return dir + "/" + path_dict["data_path"][3:]
+            else:
+                return path_dict["data_path"]
         except KeyError:
             print("There is no path 'data_path'.")
 
     elif path_type == "figures":
         try:
-            return path_dict["fig_path"]
+            if path_dict["fig_path"].startswith("../"):
+                dir = "/".join(__file__.split("/")[:-2])
+                return dir + "/" + path_dict["fig_path"][3:]
+            else:
+                return path_dict["fig_path"]
         except KeyError:
             print("There is no path 'fig_path'.")
     elif path_type == "style":
         try:
-            return path_dict["style_path"]
+            dir = "/".join(__file__.split("/")[:-1])  # style file lies in the same directory as this file
+            return dir+"/"+path_dict["style_path"]
         except KeyError:
             print("There is no path 'style_path'.")
 
