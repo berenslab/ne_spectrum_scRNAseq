@@ -1,3 +1,4 @@
 notebooks/not_for_release
 docker_instructions_to_delete
 download_human.sh
+scripts/*dirty*
