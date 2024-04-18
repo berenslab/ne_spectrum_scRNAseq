@@ -28,6 +28,11 @@ conda env create -f environment.yml
 conda activate ne_spectrum_scRNAseq
 ```
 
+Install the utililits for this repository
+```
+python setup.py install
+```
+
 # Usage
 To reproduce the data for the figures in the main paper, run
 ```
