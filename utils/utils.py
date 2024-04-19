@@ -10,7 +10,7 @@ from .treutlein_preprocess import preprocess as treut_preprocess
 
 def get_path(path_type):
     #  util for reading in paths from file
-    with resource_stream(__name__, "my_paths") as file:
+    with resource_stream(__name__, "paths") as file:
         lines = file.readlines()
     lines = [line.decode('ascii').split(" ") for line in lines]
     path_dict = {line[0]: " ".join(line[1:]).strip("\n") for line in lines}
