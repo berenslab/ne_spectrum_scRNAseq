@@ -1,0 +1,3 @@
+data_path ../data
+fig_path ../figures
+style_path style.mplstyle
