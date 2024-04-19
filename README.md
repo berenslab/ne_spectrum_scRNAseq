@@ -10,7 +10,7 @@ It depends on the `ne-spectrum` package, which computes neighbor embedding spect
 
 Neighbor embedding spectrum on developmental human brain organoid data from [Kanton et al. 2019](https://www.nature.com/articles/s41586-019-1654-9).
 
-<img src="/figures/human-409b2_tsne_spectrum.gif" width="600" height="600"/>
+<p align="center"><img  alt="Neighbor embedding spectrum on Kanton et al. data animated" src="/figures/human-409b2_tsne_spectrum.gif" width="600"/>
 
 Higher attraction improves the global structure as measured by Spearman distance correlation. Higher repulsion improves
 local structure as measured by kNN recall.
