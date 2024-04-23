@@ -1,4 +1,4 @@
-name: miniumap
+name: ne_spectrum
 channels:
   - conda-forge
   - pytorch
