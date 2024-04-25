@@ -1,7 +1,7 @@
 # Neighbor embedding spectrum for single-cell data
 
 This repository contains scripts and notebooks to reproduce the experiments in
-*Exploring structure in single-cell data with the neighbor embedding spectrum* ([bioarxiv]())
+*Visualizing single-cell data with the neighbor embedding spectrum* ([bioarxiv]())
 
 It depends on the `ne-spectrum` package, which computes neighbor embedding spectra.
 
@@ -27,7 +27,7 @@ conda env create -f environment.yml
 conda activate ne_spectrum_scRNAseq
 ```
 
-Install the utililits for this repository
+Install the utilities for this repository
 ```
 python setup.py install
 ```
