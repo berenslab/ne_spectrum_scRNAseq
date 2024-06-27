@@ -25,7 +25,7 @@ import scipy
 from scipy.io import mmread
 from pathlib import Path
 
-import vis_utils.rnaseqTools as rnaseqTools
+import utils.rnaseqTools as rnaseqTools
 
 
 def preprocess(metafile, countfile, line, n=1000, decay=1.5, n_components=50):
@@ -44,7 +44,7 @@ def preprocess(metafile, countfile, line, n=1000, decay=1.5, n_components=50):
     impGenes = rnaseqTools.geneSelection(counts[ind, :], n=n, decay=decay, plot=False)
 
     # Transformations
-    X = np.log2(np.array(counts[:, impGenes][ind, :]) / seqDepths * np.median(seqDepths) + 1)
+    X = np.log2(counts[:, impGenes][ind, :].toarray() / seqDepths * np.median(seqDepths) + 1)
     X = X - X.mean(axis=0)
     U, s, V = np.linalg.svd(X, full_matrices=False)
     X = np.dot(U, np.diag(s))
