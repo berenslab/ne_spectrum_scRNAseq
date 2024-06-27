@@ -1,4 +1,4 @@
-name: ne_spectrum
+name: ne_spectrum_scRNAseq
 channels:
   - conda-forge
   - pytorch
@@ -13,14 +13,16 @@ dependencies:
   - opentsne
   - pandas
   - pip
+  - python>=3.12
   - python
-  - pytorch=1.13.1
+  - pytorch
+  #- pytorch-cuda
   - cudatoolkit
   - scikit-image
   - scikit-learn
   - scipy
   - setuptools
-  - torchvision=0.14.1
+  - torchvision
   - yaml
   - anndata
   - scanpy=1.9.3
