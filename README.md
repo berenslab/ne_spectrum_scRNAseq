@@ -3,7 +3,7 @@
 This repository contains scripts and notebooks to reproduce the experiments in
 *Visualizing single-cell data with the neighbor embedding spectrum* ([bioarxiv](https://www.biorxiv.org/content/10.1101/2024.04.26.590867v1))
 
-It depends on the `ne-spectrum` package, which computes neighbor embedding spectra.
+It depends on the [`ne-spectrum`](https://github.com/sciai-lab/ne-spectrum) package, which computes neighbor embedding spectra.
 
 <p align="center"><img width="800" alt="NE spectrum on Kanton et al. data" src="/figures/main_fig_tsne.png">
 
